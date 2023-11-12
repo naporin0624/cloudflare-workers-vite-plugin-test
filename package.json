@@ -1,15 +1,36 @@
 {
-  "name": "vite-plugin-test",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20230419.0",
-    "typescript": "^5.0.4",
-    "wrangler": "^3.0.0"
-  }
+	"name": "vite-plugin-test",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "vite dev",
+		"build": "vite build",
+		"start": "wrangler dev"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20230419.0",
+		"@hono/vite-dev-server": "^0.1.0",
+		"typescript": "^5.0.4",
+		"vite": "^4.5.0",
+		"wrangler": "^3.0.0"
+	},
+	"dependencies": {
+		"@hono/node-server": "^1.2.1",
+		"@miniflare/cache": "^2.14.1",
+		"@miniflare/core": "^2.14.1",
+		"@miniflare/d1": "^2.14.1",
+		"@miniflare/durable-objects": "^2.14.1",
+		"@miniflare/html-rewriter": "^2.14.1",
+		"@miniflare/kv": "^2.14.1",
+		"@miniflare/queues": "^2.14.1",
+		"@miniflare/r2": "^2.14.1",
+		"@miniflare/runner-vm": "^2.14.1",
+		"@miniflare/shared": "^2.14.1",
+		"@miniflare/shared-test-environment": "^2.14.1",
+		"@miniflare/sites": "^2.14.1",
+		"@miniflare/storage-memory": "^2.14.1",
+		"@miniflare/web-sockets": "^2.14.1"
+	}
 }
